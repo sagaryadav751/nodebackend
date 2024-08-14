@@ -1,0 +1,41 @@
+const mongoose=require('mongoose')
+const userSchema=new mongoose.Schema({
+    f_name:{
+        type:String,
+        required:true
+    },
+    l_name:{
+        type:String,
+        required:true
+    },
+    age:{
+        type:String,
+        required:true
+    },
+    gender:{
+        type:String,
+        required:true
+    },
+    qli:{
+        type:String,
+        required:true
+    },
+    email:{
+        type:String,
+        required:true
+    },
+    state:{
+        type:String,
+        required:true
+    },
+    mob:{
+        type:String,
+        required:true
+    },
+    pass:{
+        type:String,
+        required:true
+    }
+})
+
+module.exports=mongoose.model('user',userSchema)
