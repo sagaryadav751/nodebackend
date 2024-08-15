@@ -161,7 +161,7 @@ router.post("/login",async(req,res,next)=>{
         })
       }
     }else{
-     
+     console.log("i am else part of login page")
     }
     
   }catch(error){
